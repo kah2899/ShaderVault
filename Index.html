@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lilita+One&family=Monoton&family=Plaster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>ShaderVault</title>
+    <link rel="stylesheet" href="ShaderVault.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">ShaderVault</div>
+            <ul class="nav-links">
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#hdris">HDRIs</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search materials, HDRIs..." id="searchInput">
+                <span>🔍</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Free Materials & HDRIs</h1>
+            <p>Discover thousands of high-quality materials and HDRIs for your 3D projects. All completely free,
+                created by the community for the community.</p>
+            <div class="cta-buttons">
+                <a href="#browse" class="btn btn-primary">Browse Collection</a>
+                <a href="#upload" class="btn btn-secondary">Upload Content</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <div class="filter-tab active" data-category="all">All</div>
+                <div class="filter-tab" data-category="materials">Materials</div>
+                <div class="filter-tab" data-category="hdris">HDRIs</div>
+                <div class="filter-tab" data-category="textures">Textures</div>
+            </div>
+            <div class="filter-options">
+                <select class="filter-dropdown">
+                    <option>Category</option>
+                    <option>Architectural</option>
+                    <option>Nature</option>
+                    <option>Metal</option>
+                    <option>Fabric</option>
+                    <option>Stone</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Quality</option>
+                    <option>4K</option>
+                    <option>2K</option>
+                    <option>1K</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Recently Added</option>
+                    <option>Most Downloaded</option>
+                    <option>Highest Rated</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="browse">
+        <div class="container">
+            <h2 class="section-title">Featured Materials & HDRIs</h2>
+            <div class="content-grid" id="contentGrid">
+                <!-- Sample content cards -->
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">🏗️</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Concrete Wall Material</h3>
+                        <div class="card-meta">
+                            <span>4K Resolution</span>
+                            <span>Downloaded 1.2k times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Architectural</span>
+                            <span class="tag">PBR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">🌅</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sunset Sky HDRI</h3>
+                        <div class="card-meta">
+                            <span>8K Resolution</span>
+                            <span>Downloaded 2.1k times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Sky</span>
+                            <span class="tag">Warm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">⚙️</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Brushed Metal</h3>
+                        <div class="card-meta">
+                            <span>4K Resolution</span>
+                            <span>Downloaded 856 times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Metal</span>
+                            <span class="tag">Industrial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">🌲</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Forest Floor Texture</h3>
+                        <div class="card-meta">
+                            <span>2K Resolution</span>
+                            <span>Downloaded 643 times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Nature</span>
+                            <span class="tag">Organic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">🏢</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Urban Environment HDRI</h3>
+                        <div class="card-meta">
+                            <span>6K Resolution</span>
+                            <span>Downloaded 1.8k times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Urban</span>
+                            <span class="tag">Lighting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-image">
+                        <span style="color: #666; font-size: 3rem;">🪨</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Marble Texture Pack</h3>
+                        <div class="card-meta">
+                            <span>4K Resolution</span>
+                            <span>Downloaded 934 times</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag">Stone</span>
+                            <span class="tag">Luxury</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upload-section" id="upload">
+        <div class="container">
+            <h2 class="section-title">Share Your Creations</h2>
+            <p style="color: #ccc; margin-bottom: 2rem;">Help grow the community by uploading your materials and HDRIs
+            </p>
+            <div class="upload-area">
+                <div class="upload-icon">📁</div>
+                <h3>Drag & Drop Files Here</h3>
+                <p style="color: #888; margin: 1rem 0;">or click to browse</p>
+                <button class="btn btn-primary">Choose Files</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ShaderVault. Made with ❤️ for the 3D community.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple filtering functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const contentCards = document.querySelectorAll('.content-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                filterTabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+
+                const category = tab.dataset.category;
+
+                // Simple filter simulation (in real app, this would filter actual content)
+                contentCards.forEach(card => {
+                    if (category === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        // This is just a demo - you'd implement real filtering logic
+                        card.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+        // Search functionality (basic)
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+
+            contentCards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase());
+
+                const matches = title.includes(searchTerm) || tags.some(tag => tag.includes(searchTerm));
+                card.style.display = matches ? 'block' : 'none';
+            });
+        });
+
+        // Card click handlers
+        contentCards.forEach(card => {
+            card.addEventListener('click', () => {
+                alert('In a real app, this would open the download/preview page for this asset');
+            });
+        });
+
+        // Upload area functionality
+        const uploadArea = document.querySelector('.upload-area');
+        uploadArea.addEventListener('click', () => {
+            alert('In a real app, this would open a file picker and upload form');
+        });
+    </script>
+</body>
+
+</html>
